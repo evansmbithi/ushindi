@@ -1,0 +1,74 @@
+:root {
+  --gradient-one: #000686;
+  --gradient-two: #0ff6da;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  /*   margin: 0;
+  padding: 0;
+  font-size: 1rem; */
+}
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  /*   align-items: center; */
+  /*   max-height: 10rem; */
+}
+
+.logo {
+  max-width: 15rem;
+  margin-left: 10px;
+}
+
+.title {
+  margin: 0;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.form-group {
+  max-width: 900px;
+  margin: 0 10rem 0 10rem;
+}
+
+.heading {
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 100px;
+  align-content: space-around;
+}
+
+.input-field {
+  flex-basis: 250px;
+  height: 40px;
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100px;
+}
+
+#submit-btn {
+  cursor: pointer;
+  /*   margin-right: 1rem; */
+  border: 0;
+  outline: none;
+  font-size: 5rem;
+  background: transparent;
+  color: blue;
+}

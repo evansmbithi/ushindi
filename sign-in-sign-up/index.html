@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - sign in-sign up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <img class="box-title" src="https://raw.githubusercontent.com/evansmbithi/ushindi/Maestro/img/ushindi_logo.svg">
+  <div class="box">
+    <!--     <h3 class="box-title">[Ushindi Sacco logo]</h3> -->
+    <div class="button-box">
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Sign in</button>
+      <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+
+    <form id="login" class="input-group">
+      <input type="text" class="input-field" placeholder="Member ID" required>
+      <input type="password" class="input-field" placeholder="Password" required>
+      <input type="checkbox" class="check-box"><span>Remember password</span>
+      <button type="submit" class="submit-btn">Sign in</button>
+      <a class="reset" href="#">Forgot password?</a>
+    </form>
+
+    <form id="register" class="input-group">
+      <input type="email" class="input-field" placeholder="Enter Email" required>
+      <input type="password" class="input-field" placeholder="Enter Password" required>
+      <input type="password" class="input-field" placeholder="Confirm Password" required>
+      <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+      <button type="submit" class="submit-btn">Sign up</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  var x = document.getElementById("login");
+  var y = document.getElementById("register");
+  var z = document.getElementById("btn");
+
+  function register() {
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "120px";
+  }
+
+  function login() {
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0";
+  }
+</script>
+<!-- partial -->
+  
+</body>
+</html>
