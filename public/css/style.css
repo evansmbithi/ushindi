@@ -1,0 +1,138 @@
+:root {
+  --gradient-one: #000686;
+  --gradient-two: #0ff6da;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  /*   background: linear-gradient(
+    45deg,
+    var(--gradient-one) 20%,
+    var(--gradient-two)
+  ); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url(https://images.unsplash.com/photo-1621610087641-f3e6fbe7a3d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 40px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  /*   for Mac and linux browsers e.g safari */
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.box-title {
+  /*   position: absolute; */
+  /*   font-size: 1.2rem; */
+  /*   margin: 0 0 20px ; */
+  width: 20rem;
+  z-index: 1;
+  /*   top: 5px; */
+}
+
+.button-box {
+  background: #fff;
+  width: 240px;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 30px;
+  /*   box-shadow: 0 0 30px 1px var(--gradient-one); */
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: 0;
+  position: relative;
+  font-weight: 400px;
+}
+
+#btn {
+  background: linear-gradient(
+    45deg,
+    var(--gradient-two),
+    var(--gradient-one) 120%
+  );
+  width: 120px;
+  height: 100%;
+  /*   top: 0;
+  left:0; */
+  position: absolute;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.input-group {
+  top: 120px;
+  position: absolute;
+  width: 290px;
+  transition: 0.5s;
+  margin-left: 25px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    var(--gradient-two),
+    var(--gradient-one) 120%
+  );
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  margin: 20px 40px;
+}
+
+.check-box {
+  margin: 30px 10px 10px 0;
+}
+span {
+  color: #444;
+}
+
+.reset {
+  margin-left: 90px;
+}
+
+#login {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}
